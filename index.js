@@ -17,11 +17,11 @@ let activeMark = "X";
 //game status
 let playingGame = true;
 
+//select game board in html (all cell) -- use defer in html
+const gameBoard = document.querySelectorAll(".cell");
+
 //function when clicking game board cell
 const clickCell = (index) => {
-  //select game board in html (all cell)
-  const gameBoard = document.querySelectorAll(".cell");
-
   //marking game board
   //only if the cell was empty before & 'playingGame' is true
   if (playingGame) {
